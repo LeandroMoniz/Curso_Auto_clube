@@ -10,50 +10,38 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Recuperação de Senha</title>
 </head>
-
 <body>
-    <div class="container" id="header-container" >
+    <div class="container-sm" id="header-container" >
         <header class="row" id="header">
-            <div class="col-sm-4"><span>AutoClub</span></div>
-            <div class="col-sm-7"></div>
-            <div class="col-sm-1">
+            <div class="col-1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                 <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
                 </svg>
-            </div>  
-    
+            </div>        
+            <div class="col-1" id="logo-center"><h1>AutoClub</h1></div>
+       
         </header>
     </div>
     
-    <div class="container" id="main-container">
-        <main class="row" id="main">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-11" id="recup"><p>Recuperação de Senha</p></div>
-            <div class="col-sm-1"></div>
-            <div class="col-sm-11 " id="texto">
-                <p>Não se preocupe!</p>
-                <p>Para recuperar a sua senha basta nos informar seu E-mail e CPF, que enviaremos um link com instruções para cadastrar uma nova senha e recuperar seu acesso. 
-                </p>
-            </div>
-            <div class="form-group row" id="camp-1">
+    <div class="container-sm" id="main-container">
+        <main class="row-sm" id="main">
+            <div class="col-sm-12" id="recup"><h1>Recuperação de Senha</h1></div>
+            <div class="col-sm-12" id="texto"><h2>Crie uma senha forte</h2></div>
+            <div class="form-group row" id="camp-3">
                 <div class="col-sm-2"></div>
-                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                <div class="col-sm-6">
-                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email" required>
-                </div>
+                <label for="exampleInputPassword1">Nova Senha</label>
+                <input type="password" class="form-control" id="nova-senha" placeholder="Senha">
                 <div class="invalid-feedback">
                     Por favor, insira um email
                 </div>
                 <div class="col-sm-2"></div>
                 
             </div>
-            <div class="form-group row" id="camp-2">
+            <div class="form-group row" id="camp-4">
                 <div class="col-sm-2"></div>
-                <label for="inputcpf3" class="col-sm-2 col-form-label">CPF</label>
-                <div class="col-sm-6">
-                  <input type="cpf" class="form-control" id="inputcpf3" placeholder="CPF" required>
-                </div>
+                <label for="exampleInputPassword1">Confirmar Senha</label>
+                <input type="password" class="form-control" id="Confirmar-senha" placeholder="Senha">
                 <div class="invalid-feedback">
                     Por favor, insira um CPF
                 </div>
@@ -63,7 +51,7 @@
         </main>
 
         <footer class="footer">
-                <button class="btn btn-primary" type="submit">Enviar</button> 
+                <button class="btn btn-primary" type="submit">Salvar</button> 
         </footer>
     </div>
 </body>
